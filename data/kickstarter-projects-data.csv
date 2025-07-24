@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Kickstarter Projects | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="More than 300,000 kickstarter projects" />
+    <meta name="keywords" content="business,finance,crowdfunding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="bFheHQZjS51MB040PgqX&#x2B;A==" type="text/javascript">
+    window["pageRequestStartTime"] = 1753369318732;
+    window["pageRequestEndTime"] = 1753369318905;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <script nonce="bFheHQZjS51MB040PgqX&#x2B;A==" id="gsi-client" src="https://accounts.google.com/gsi/client" async defer></script>
+  <script nonce="bFheHQZjS51MB040PgqX&#x2B;A==">window.KAGGLE_JUPYTERLAB_PATH = "/static/assets/jupyterlab-v4/jupyterlab-index-c627dac300f0e757be07.html";</script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+    <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" id="dynamic-favicon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Symbols:FILL@0..1&display=block"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="bFheHQZjS51MB040PgqX&#x2B;A==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+
+    <link rel="canonical" href="https://www.kaggle.com/datasets/kemical/kickstarter-projects" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=2d4e7ec4eb689d926191" />
+
+  
+    
+ 
+      <script nonce="bFheHQZjS51MB040PgqX&#x2B;A==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="bFheHQZjS51MB040PgqX&#x2B;A==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="bFheHQZjS51MB040PgqX&#x2B;A==" async src="https://www.googletagmanager.com/gtag/js?id=G-T7QHS60L4Q"></script>
+
+  
+    
+    <meta property="og:url" content="https://www.kaggle.com/datasets/kemical/kickstarter-projects" />
+    <meta property="og:title" content="Kickstarter Projects" />
+    <meta property="og:description" content="More than 300,000 kickstarter projects" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/4104/6379/f62e95a1e2400e530fdf46edff175d67/dataset-card.png?t=2017-11-06-17-09-14" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+            <script nonce="bFheHQZjS51MB040PgqX+A==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Kickstarter Projects","description":"### Context\n\nI'm a crowdfunding enthusiast and i'm watching kickstarter since its early days. Right now I just collect data and the only app i've made is this twitter bot which tweet any project reaching some milestone: @bloomwatcher . I have a lot of other ideas, but sadly not enough time to develop them... But I hope you can!\n\n### Content\n\nYou'll find most useful data for project analysis. Columns are self explanatory except:\n\n- usd_pledged: conversion in US dollars of the pledged column  (conversion done by kickstarter).\n\n- usd pledge real: conversion in US dollars of the pledged column (conversion from [Fixer.io API][1]).\n\n- usd goal real: conversion in US dollars of the goal column (conversion from [Fixer.io API][1]).\n\n### Acknowledgements\n\nData are collected from [Kickstarter Platform][2]\n\nusd conversion (usd_pledged_real and usd_goal_real columns) were generated from [convert ks pledges to usd][3] script done by [tonyplaysguitar][4] \n\n### Inspiration\n\nI hope to see great projects, and why not a model to predict if a project will be successful before it is released? :)\n\n\n  [1]: http://Fixer.io\n  [2]: https://www.kickstarter.com/\n  [3]: https://www.kaggle.com/tonyplaysguitar/convert-ks-pledges-to-usd/\n  [4]: https://www.kaggle.com/tonyplaysguitar","url":"https://www.kaggle.com/kemical/kickstarter-projects","version":7,"keywords":["subject, people and society, business","subject, people and society, business, finance","subject, people and society, business, finance, crowdfunding"],"license":{"@type":"CreativeWork","name":"CC BY-NC-SA 4.0","url":"https://creativecommons.org/licenses/by-nc-sa/4.0/"},"identifier":["4104"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Mickaël Mouillé","url":"https://www.kaggle.com/kemical","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/548353-fb.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/kemical/kickstarter-projects/download?datasetVersionNumber=7","contentSize":"38571084 bytes"}],"commentCount":23,"dateModified":"2018-02-08T09:02:30.193Z","discussionUrl":"https://www.kaggle.com/kemical/kickstarter-projects/discussion","alternateName":"More than 300,000 kickstarter projects","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/4104/6379/f62e95a1e2400e530fdf46edff175d67/dataset-card.png?t=2017-11-06-17-09-14","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":23},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":88440},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":515267},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":1621}]}</script>
+        
+
+  
+    
+
+  
+    
+
+
+    <script nonce="bFheHQZjS51MB040PgqX&#x2B;A==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="bFheHQZjS51MB040PgqX&#x2B;A==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="bFheHQZjS51MB040PgqX+A==" src="/static/assets/runtime.js?v=58de9d909dc910dae79b"></script>
+  <script nonce="bFheHQZjS51MB040PgqX+A==" src="/static/assets/vendor.js?v=6d226e4a372be1c4af4e"></script>
+  <script nonce="bFheHQZjS51MB040PgqX+A==" src="/static/assets/app.js?v=c71e45f7a9e6443f3f51"></script>
+    <script nonce="bFheHQZjS51MB040PgqX&#x2B;A==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+<body>
+  <div id="root">
+    
+
+
+
+
+
+
+
+
+<script nonce="bFheHQZjS51MB040PgqX&#x2B;A==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    jax: ['input/TeX', 'output/SVG'],
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="bFheHQZjS51MB040PgqX&#x2B;A==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    // Always use the production asset in local dev, which is served from GCS. We tried to proxy and / or serve this
+    // in a better way in localhost, but it didn't work out. See b/328073416#comment8 for details.
+    const forceProdHost = window.location.hostname === "localhost";
+    lib.src = `${forceProdHost ? "https://www.kaggle.com" : ""}/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS_SVG`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
